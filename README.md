@@ -1,10 +1,14 @@
-# Diplothesis08
+# Diplomarbeit 2008 - my thesis from 2008
 
-This is a recreation of the diploma thesis in physics from 2008.
+![GitHub Release](https://img.shields.io/github/v/release/kreier/thesis08)
+![GitHub License](https://img.shields.io/github/license/kreier/thesis08)
+
+
+This is a recreation of the **diploma thesis** in **physics** from at the _Humboldt Universität zu Berlin_ in 2008.
 
 ## Diplom 2008
 
-Die LaTeX Originaldatei ist leider verlorengegangen. Aber da ich die gerenderte PDF von 2008 noch habe, konnte ich daraus eine Kopie erstellen.
+Die LaTeX Originaldatei ist leider verlorengegangen. Aber da ich die [gerenderte PDF von 2008](2008/20080124.pdf) noch habe, konnte ich daraus eine Kopie erstellen. Es ist auch auf [https://people.physik.hu-berlin.de/~kreier/thesis/20080124.pdf](https://people.physik.hu-berlin.de/~kreier/thesis/20080124.pdf) gehostet.
 
 ## Thesis 2008
 
