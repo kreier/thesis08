@@ -18,11 +18,11 @@ Surprisingly the English edition of the TEX file is still available. But it was 
 
 ## Diplomarbeit 2025
 
-Eine neue Version wurde unter Linux gerendert. Vielleicht kann ich es sogar mit GitHub Actions automatisieren, das wäre einen Versuch wert. But first I have to recreate the original `.TEX` file and then adjust it for the new environment of 2025 where **utf-8** is natively supported, and even **subscript** needs no specific definition in LaTeX. Read [more here](2025/)
+Eine neue Version wurde unter Linux gerendert. Vielleicht kann ich es sogar mit GitHub Actions automatisieren, das wäre einen Versuch wert. Aber zuerst muss ich die ursprüngliche `.TEX`‑Datei neu erstellen und sie dann an die neue Umgebung des Jahres 2025 anpassen, in der **utf‑8** nativ unterstützt wird und sogar **subscript** in LaTeX keiner speziellen Definition mehr bedarf. Lies [hier mehr](Diplomarbeit/).
 
 ## Diploma thesis 2025
 
-This time I finished the translation to English of all 68 pages
+This time I finished the translation to English of all 68 pages. But first I have to recreate the original `.TEX` file for the German version and then adjust it for the new environment of 2025 where **utf-8** is natively supported, and even **subscript** needs no specific definition in LaTeX. Read [more here](Diplomarbeit/)
 
 ## ArXiv
 
