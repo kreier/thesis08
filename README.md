@@ -10,13 +10,15 @@ This is a recreation of the **diploma thesis** in **physics** from at the _Humbo
 
 Die LaTeX Originaldatei ist leider verlorengegangen. Aber da ich die [gerenderte PDF von 2008](2008/20080124.pdf) noch habe, konnte ich daraus eine Kopie erstellen. Es ist auch auf [https://people.physik.hu-berlin.de/~kreier/thesis/20080124.pdf](https://people.physik.hu-berlin.de/~kreier/thesis/20080124.pdf) gehostet.
 
+<img src="./images/2008_p01.jpg" width="24%"><img src="./images/2008_p08.jpg" width="24%"><img src="./images/2008_p40.jpg" width="24%"><img src="./images/2008_p49.jpg" width="24%">
+
 ## Thesis 2008
 
 Surprisingly the English edition of the TEX file is still available. But it was never finished. Well, in 2025, 17 years later, I finally completed this work.
 
 ## Diplomarbeit 2025
 
-Eine neue Version wurde unter Linux gerendert. Vielleicht kann ich es sogar mit GitHub Actions automatisieren, das wäre einen Versuch wert.
+Eine neue Version wurde unter Linux gerendert. Vielleicht kann ich es sogar mit GitHub Actions automatisieren, das wäre einen Versuch wert. But first I have to recreate the original `.TEX` file and then adjust it for the new environment of 2025 where **utf-8** is natively supported, and even **subscript** needs no specific definition in LaTeX. Read [more here](2025/)
 
 ## Diploma thesis 2025
 
