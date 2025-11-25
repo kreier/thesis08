@@ -29,11 +29,11 @@ Back in 2008 utf-8 was not yet widely supported. So I needed to include some ext
 
 Even subscript is now implemented in a good way, my definition has to go:
 
-``` LaTeX
-   \DeclareRobustCommand*\textsubscript[1]{%
-     \@textsubscript{\selectfont#1}}
-   \newcommand{\@textsubscript}[1]{%
-     {\m@th\ensuremath{_{\mbox{\fontsize\sf@size\z@#1}}}}}
+``` tex
+\DeclareRobustCommand*\textsubscript[1]{
+  \@textsubscript{\selectfont#1}}
+\newcommand{\@textsubscript}[1]{
+  {\m@th\ensuremath{_{\mbox{\fontsize\sf@size\z@#1}}}}}
 ```
 
 ## Add missing text and pictures
