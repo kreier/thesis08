@@ -5,8 +5,8 @@
 %\nofiles % verhindert Ausgabe einer neuen TOC
 \usepackage{palatino}
 \usepackage[OT2,T1]{fontenc}
-\usepackage{ucs}
-\usepackage[utf8x]{inputenc}
+% \usepackage{ucs}                % - Modern LaTeX (2020+) already assumes UTF‑8 by default, so you don’t need ucs or utf8x.
+% \usepackage[utf8x]{inputenc}
 \usepackage{geometry}
 \geometry{verbose,a4paper,tmargin=35mm,bmargin=25mm,lmargin=25mm,rmargin=25mm,headheight=10mm,headsep=10mm,footskip=10mm}
 \pagestyle{headings}
@@ -24,10 +24,10 @@
 \makeatletter
   \newcommand{\noun}[1]{\textsc{#1}}
 
-  \DeclareRobustCommand*\textsubscript[1]{%
-    \@textsubscript{\selectfont#1}}
-  \newcommand{\@textsubscript}[1]{%
-    {\m@th\ensuremath{_{\mbox{\fontsize\sf@size\z@#1}}}}}
+  % \DeclareRobustCommand*\textsubscript[1]{%
+  %   \@textsubscript{\selectfont#1}}
+  % \newcommand{\@textsubscript}[1]{%
+  %   {\m@th\ensuremath{_{\mbox{\fontsize\sf@size\z@#1}}}}}
 
   \renewcommand{\chaptermark}[1]{%
   \markboth{#1}{}}
@@ -35,7 +35,8 @@
   \markright{#1}{}}
 
 % \bibliographystyle{Nplain} % Stil der Phys. Rev. Ausgaben ist amsplain
-\hypersetup{%
+
+\hypersetup{
  colorlinks=true,
  linkcolor=blue,
  citecolor=blue,
@@ -46,6 +47,7 @@
  pdfcreator	= {Adobe-Acrobat-Distiller},
  pdfproducer	= {LaTeX with hyperref and thumbpdf}
 }
+
 \makeatother
 
 \begin{document}
@@ -59,7 +61,7 @@ Elektronische Struktur der\\
 ternären II/VI-Halbleiter\\[1.2mm]
 Cd\textsubscript{\large1-X}Hg\textsubscript{\large X}Te}\\[13mm]
 {\Large Diplomarbeit}\\[20mm]
-\includegraphics[ width=40mm, height=40mm]{pic/husiegel_bw_rgb}\\[20mm]
+\includegraphics[width=40mm, height=40mm]{pic/husiegel_bw_rgb}\\[20mm]
 \noun{
 Humboldt-Universität zu Berlin\\
 %Mathematisch-Naturwissenschaftliche Fakultät I\\
