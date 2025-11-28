@@ -70,7 +70,7 @@ AG Elektronische Eigenschaften und Supraleitung}\\[15mm]
 eingereicht von\\[10mm]
 {
 Matthias Kreier\\
-geb. am 3.10.1975 in Nauen}\\[25mm]
+geb. am 3.10.1975 in Nauen}\\[20mm]
 Berlin, 24. 1. 2008
 \end{center}
 \end{titlepage}
@@ -87,7 +87,7 @@ Aufgrund militärischer Anforderungen war man in den 40er und 50er Jahren des 20
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=100mm, keepaspectratio]{pic/1-sensor}
+\includegraphics[width=90mm, keepaspectratio]{pic/1-sensor}
 \caption{\label{fermikante}Abbildung 1.1: HgCdTe in Infrarotkameras: Das Rockwell 2x2 2Kx2K Infrarot-Array Hawaii-2RG}
 \end{center}
 \end{figure}
@@ -99,6 +99,18 @@ Aufgrund seiner Eigenschaften ist HgCdTe im Bereich der IR-Detektoren das Materi
 Seine besonderen Eigenschaften erhält die ternäre Verbindung HgCdTe durch eine Mischung der Eigenschaften seiner beiden Bestandteile CdTe und HgTe. Beide Materialien lassen sich in beliebigen Verhältnissen mischen. Das Verhältnis von Cd zu Hg wird mit 0 < x < 1 in Hg1-XCdXTe angegeben. Bei CdTe handelt es sich um einen klassischen Halbleiter mit einer direkten Bandlücke von 1,6 eV. Die Legierung HgTe hingegen ist nicht einfach einzuordnen. Sie besitzt metallische Eigenschaften, weshalb einige sie als Semimetall bezeichnen. Andererseits zeigt sie Halbleitereigenschaften, die allerdings nur richtig erklärt werden können, wenn man von einer negativen Bandlücke ausgeht. Gemäß der Definition der Bandlücke als Energiedifferenz zwischen $\Gamma_8$ und $\Gamma_6$ beträgt die Bandlücke daher -0.283 eV. Dies ist in Übereinstimmung mit magnetooptischen Transportmessungen [6].
 
 Ziel dieser Diplomarbeit ist die Untersuchung der elektronischen Struktur von CdxHg1-xTe mit x-Werten von 0,07 bis 0,4. Uns interessiert, wie sich die elektronische Bandstruktur beim Übergang vom Halbleiter zum ’zero-gap’-Halbleiter zum Halbleiter mit negativer Bandlücke verhält. Als verheißungsvoll erwies sich die Arbeit von N. Orlowski [7] an HgTe, in der das unter das VBM geklappte $\Gamma_6$-Band spektroskopisch aufgelöst werden konnte. Seine Ergebnisse von 2000 motivierte zweifellos zur Ausschreibung der folgenden Diplomarbeit im Jahre 2004:
+
+Elektronische Eigenschaften der II-VI-Halbleiterverbindungen Cd1-xHgxTe und Pb1-xSnxTe
+
+Die in der Arbeit zu untersuchenden ternären Halbleiterverbindungen erlauben in Abhängigkeit von der Zusammensetzung eine weite Variation der fundamentalen Bandlücke, die nicht nur zu Null sondern sogar auch negativ gemacht werden kann (wird bei Nachfrage näher erläutert). Dabei wird das prinzipielle Auftreten einer negativen Bandlücke bei verschiedenen Halbleitern heute noch kontrovers diskutiert und eine direkte Untersuchungsmethode wie die winkelaufgelöste Photoemission könnte hier die Klärung bringen.
+
+Die Aufgabe der/des Diplomandin/en besteht u.a. darin, die in einem kooperierenden Mos-
+kauer Institut hergestellten Einkristalle zu charakterisieren (z.B. SEM/Röntgenemission, Laue-
+Beugung, LEED) und anschließend mit winkelaufgelöster Photoemission und evtl. auch inverser
+Photoemission die experimentelle Bandstruktur zu bestimmen und die Ergebnisse mit Rechnun-
+gen verschiedener Modelle zu vergleichen und zu diskutieren. Die Messungen sollen sowohl im
+Berliner Institut als auch teilweise mit Synchrotronstrahlung (BESSY in Berlin oder HASYLAB in
+Hamburg) durchgeführt werden.
 
 \ru{Добрый день, Добро пожаловать в \LaTeXе!}
 
@@ -150,8 +162,136 @@ Modus invenire persecuti eu sit, dolor doming accusamus nec ei. Atqui explicari 
 
 Finally this chapter ends.
 
-\chapter{Grundlagen der winkelaufgelösten Photo Elektron Spektroskopie}
-\section{Meßprinzip}
+\chapter{Eigenschaften von II-VI Halbleitern}
+\section{Kristallstruktur}
+
+Die Struktur von kristallinen Festkörpern wird durch das Gitter und die Basis beschrieben.
+Das Gitter ist eine dreidimensionale Anordnung von Punkten, deren kleinste Einheit die Ele-
+mentarzelle ist. Es wird durch die entsprechenden Gitterkonstanten sowie primitive Vektoren
+beschrieben. Die Basis deﬁniert die Anordnung der Atome in der Elementarzelle. Zu jeder
+Struktur gibt es ein entsprechendes reziprokes Gitter im reziproken Raum. In diesem wird die
+elektronische Struktur beschrieben. Die Wigner-Seitz-Zelle des reziproken Gitters heißt erste
+Brillouin-Zone.
+
+Abbildung 2.1: Zinkblendestruktur von HgCdTe. Die gelben Punkte re-
+präsentieren das Tellur. An den grauen Plätzen beﬁndet sich Cadmium
+mit einem Anteil von „x“ oder Quecksilber mit einem Anteil „1-x“.
+
+Die räumliche Struktur von HgCdTe wird als „Zinkblende-Struktur“ bezeichnet (Abbil-
+dung 2.1). Diese Struktur wird durch zwei kubisch-ﬂächenzentrierte (fcc) Elementarzellen ge-
+bildet, die um ein Viertel ihrer Raumdiagonalen gegeneinander verschoben sind. Hier bildet ein Tellur-Atom die Basis des ersten Gitters. Die Basis des zweiten Gitters wird zu x aus Cadmiumatomen gebildet und zu $1 - x$ aus Atomen von Quecksilber.
+
+Tabelle 2.1: Entfernungen der hochsymmetrischen Punkte vom Zentrum der Volumen-Brillouin-Zone
+des fcc-Gitters. Die formalen Werte für df sind angegeben, um aus einer beliebigen Gitterkonstante a
+die Entfernungen berechnen zu können.
+
+In dieser Kristallstruktur ist jedes Atom tetraedrisch von vier nächsten Nachbarn der ande-
+ren Atomsorte umgeben. Die Ursache ist die Hybridisierung der s- und p-Orbitale der Valenz-
+elektronen zu sp3-Hybridorbitalen. Sie schließen einen Bindungswinkel von 109,5◦ ein.
+
+Die Gitterkonstanten von HgTe und CdTe unterscheiden sich um weniger als 0.7% vonein-
+ander. Für die ternären Verbindung Hg1-xCdxTe folgt sie entsprechend dem Kompositionspa-
+rameter x der empirischen Formel $a = 6, 4614 + 0, 00084x + 0, 0168x2 - 0, 0057x3$ [8] .
+
+Das Kristallgitter wird durch folgende primitive Vektoren beschrieben:
+
+
+Gemäß Deﬁnition ergeben sich daraus die zugehörigen reziproken Gittervektoren:
+
+\section{Volumen-Brillouin-Zone}
+
+Aus diesen reziproken Gittervektoren resultiert ein reziprokes Gitter, das kubisch raumzen-
+triert (bcc, body centered cubic) ist. Die erste Brillouin-Zone ist das in Abbildung 2.2 darge-
+stellte abgestumpfte Oktaeder. Die Abbildung zeigt einen Schnitt durch die Volumen-Brillouin-
+Zone sowie die Oberﬂächen-Brillouin-Zonen, die den Flächen (110) und (001) entspechen.
+
+Ebenfalls eingezeichnet sind die hochsymmetrischen Punkte $\mathrm{\Gamma}$, X, L, K, W und U. Es ﬁnden
+sich auch die drei hochsymmetrischen Richtungen $\Delta$, $\Sigma$ und $\Lambda$. Sie entsprechen den Richtungen
+[001],[110] und [111]. Die jeweiligen Abstände können in Tabelle 2.1 abgelesen werden.
+
+Volumen-Brillouin-Zone
+
+Abbildung 2.2: Volumen-Brillouin-Zone des fcc-Gitters sowie Oberﬂächen-Brillouin-
+Zonen der idealen (001) und (110) Oberﬂächen. Einige hochsymmetrische Punkte
+sind eingezeichnet. Die Richtungen $\Delta$, $\Sigma$ und $\Lambda$ entsprechen jeweils der Richtung
+[001], [110] und [111].
+
+\section{Oberﬂächeneigenschaften}
+
+An der Oberﬂäche kommt es zu einem Bruch der Translationssymmetrie des Volumenkristalls.
+Man kann daher die Oberﬂäche als eine Störung auffassen; das Kristall nimmt einen Zustand
+minimaler Energie an. In der idealen Oberﬂäche besetzen die Oberﬂächenatome eine wohldeﬁ-
+nierte Gitterebene des Volumenkristalls, ihre Periodizität wäre somit festgelegt. Dieser Zustand
+ist jedoch äußerst selten der Fall.
+
+Die einfachste Abweichung von der idealen Oberﬂäche wird als Relaxation bezeichnet. Hier-
+bei treten einheitliche Verschiebung der obersten oder der oberen Lagen gegenüber dem Volu-
+men auf. Von einer Rekonstruktion spricht man, wenn die Atome der obersten Lage periodisch
+gegeneinander verschoben sind und eine Überstruktur bilden [11].
+
+Die natürliche Spaltﬂäche der II-VI-Halbleiter (wie auch HgCdTe) ist die (110)-Fläche. Durch
+ein Spalten der Probe im Vakuum lässt sich diese Oberﬂäche am einfachsten generieren. Alle
+Messungen dieser Arbeit wurden daher an dieser Oberﬂäche durchgeführt. Andere Oberﬂä-
+chen sind weitaus schwieriger herzustellen, wie zum Beispiel die (001)-Oberﬂäche [7].
+
+Abbildung 2.3: Geometrie der (110)-Oberﬂäche der Zinkblende-Struktur [12] im Querschnitt und in
+der Draufsicht. Die Parameter der Oberﬂäche sind ax = a
+
+Die (110)-Oberﬂäche enthält ebenso viele Anionen wie Kationen und ist daher energetisch
+begünstigt. Es handelt sich um eine unpolare Oberﬂäche. Bei der Spaltung relaxiert die (110)-
+Oberﬂäche. Die Anionen entfernen sich von der Oberﬂäche, während sich die Kationen auf das
+Kristall zu bewegen. Für diese Oberﬂäche wurde ein universales Modell entwickelt, das unab-
+hängig von der Substanz gültig ist [13]. Hierbei bleiben die Bindungslängen nahezu erhalten,
+die Symmetrie parallel zur Oberﬂäche wird nicht geändert.
+
+An der Oberﬂäche wird die Anion-Kation-Bindung aufgebrochen. Bei der Relaxation kommt
+es zu einem Ladungstransfer vom Kation-’dangling bond’ zum Anion-’dangling-bond’. Das
+’dangling-bond’ am Kation wird vollständig geleert und am Anion entsprechend vollständig
+besetzt. Jedes Oberﬂächenatom besitzt nur noch drei der ursprünglich vier Nachbarn. So hat
+jedes Anion (Kation) der Oberﬂäche zwei Bindungen zu einem Oberﬂächen-Kation (Anion), ei-
+ne zu einem Kation (Anion) im Volumen gerichtete Bindung sowie eine ins Vakuum gerichtete
+freie Valenz (’dangling bond’). Es kommt daher zu einer Dehybridisierung der sp3-Orbitale.
+Die Anionen nehmen eine s2p3 Koordination an, die Kationen
+
+\chapter{Theoretische Grundlagen der Photoemission}
+
+
+Um geeignete Materialien in Bauelementen wie Solarzellen, Detektoren oder integrierten Schalt-
+kreisen verwenden zu können, muss ihre elektronische und strukturelle Charakteristik bekannt
+sein. Dazu gehören ebenfalls die Transporteigenschaften des Materials. Die Bestimmung der
+elektronischen Bandstruktur ist hierzu eines der wichtigsten Hilfsmittel.
+
+Eine leistungsfähige Methode, die direkte Zustandsdichte und die impulsaufgelöste Ener-
+giebandstruktur zu bestimmen, ist die Photoelektronspektroskopie. Im Rahmen dieser Diplom-
+arbeit ﬁndet insbesondere die winkelaufgelöste Photoelektronspektroskopie oder ARPES1 An-
+wendung. Im Folgenden werden ihre physikalischen Grundlagen erläutert.
+
+
+\section{Messprinzip der Photoelektronspektroskopie}
+
+Die Photoelektronspektroskopie basiert auf dem so genannten äußeren Photoeffekt. Dieses
+physikalische Phänomen wurde bereits 1887 von H. Hertz [14] und 1888 von W. Hallwachs
+[15] entdeckt und untersucht. Die richtige Deutung erfolgte durch A. Einstein im Jahre 1905
+([16], Nobelpreis 1921). Der Effekt wird durch die folgende Formel beschrieben:
+
+$$
+E^{max}_{kin} = h\nu - \Phi.
+$$
+
+Sie gibt die maximale kinetische Energie $E^{max}_{kin}$ an, mit der Elektronen bei Anregung mit
+Strahlung der Energie $h\nu$ aus einem Metall austreten. Hier ist h das Plancksche Wirkungs-
+quantum, $\nu$ die Frequenz des ionisierenden Photons und $\Phi$ die Austrittsarbeit des angeregten
+Materials.
+
+Abhängig von der Energie der anregenden Photonen spricht man in der Photoelektronen-
+spektroskopie von UPS2 oder XPS3, wobei UPS Photonenenergien im UV-Bereich (10 bis 100
+eV) bezeichnet und XPS Photonen im Röntgenbereich (> 1000 eV). Auf Grund ihrer höhe-
+ren Energie werden durch XPS auch Rumpfelektronen angeregt. In Abhängigkeit der chemi-
+schen Umgebung zeigen XPS-Spektren Unterschiede in den Bindungsenergien eines Rumpf-
+
+1ARPES - Angle Resoved Photo Electron Spectroscopy
+2UPS - Ultraviolet Photoemission Spectroscopy, UV-Photoemission
+3XPS - X-Ray Photoemission Spectroscopy, Röntgenphotoemission
 
 To study the electronical properties of a material we use the photoelectric effect, that is
 the emission of electrons upon the absorption of electromagnetic radiation. This effect was 
