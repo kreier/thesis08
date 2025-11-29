@@ -15,6 +15,7 @@
 \usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{amssymb}
+\usepackage{changepage}
 \usepackage[russian,ngerman]{babel}
 \newcommand\ru[1]{\foreignlanguage{russian}{#1}}  % um russische Texte einzubinden
 %\usepackage{ae}   % Die Umlaute werden dann wieder unschön, das ß geht verloren ... (in Palatino)
@@ -40,11 +41,11 @@
  colorlinks=true,
  linkcolor=blue,
  citecolor=blue,
- pdftitle	= {Electronic Properties of CdHgTe},
- pdfsubject	= {Diplomarbeit Institut für Physik},
- pdfauthor	= {Matthias Kreier},
+ pdftitle	    = {Electronic Properties of CdHgTe},
+ pdfsubject	  = {Diplomarbeit Institut für Physik},
+ pdfauthor	  = {Matthias Kreier},
  pdfkeywords	= {ARPES,CdHgTe},
- pdfcreator	= {Adobe-Acrobat-Distiller},
+ pdfcreator	  = {Adobe-Acrobat-Distiller},
  pdfproducer	= {LaTeX with hyperref and thumbpdf}
 }
 
@@ -70,7 +71,7 @@ AG Elektronische Eigenschaften und Supraleitung}\\[15mm]
 eingereicht von\\[10mm]
 {
 Matthias Kreier\\
-geb. am 3.10.1975 in Nauen}\\[20mm]
+geb. am 3.10.1975 in Nauen}\\[25mm]
 Berlin, 24. 1. 2008
 \end{center}
 \end{titlepage}
@@ -83,12 +84,13 @@ Berlin, 24. 1. 2008
 
 \chapter{Einleitung}
 
-Aufgrund militärischer Anforderungen war man in den 40er und 50er Jahren des 20. Jahrhunderts intensiv auf der Suche nach einem direkten intrinsischen Halbleiter für den langwelligen Infrarot-Wellenlängenbereich (LWIR, 8-14 µm). Ein Ergebnis dieser Bemühungen war die Synthese der ternären Legierung HgCdTe im Jahre 1958 von der Lawson Forschungsgruppe [1] am Royal Radar Establishment in England. Die Bedeutung dieser Arbeit wurde schon früh erkannt. Das führte zu einer intensiven Entwicklung in zahlreichen Ländern wie England, Frankreich, Polen, Deutschland, der Sowjetunion sowie den USA [2]. Doch wurde über die Entwicklung in den ersten Jahren wenig veröffentlicht. Die Arbeiten in den USA zum Beispiel unterlagen der Geheimhaltung bis in die späten 60er Jahre. Die ersten Photodetektoren wurden in den USA bereits 1964 von Texas Instruments hergestellt.
+Aufgrund militärischer Anforderungen war man in den 40er und 50er Jahren des 20. Jahrhunderts intensiv auf der Suche nach einem direkten intrinsischen Halbleiter für den langwelligen Infrarot-Wellenlängenbereich (LWIR, 8-14 µm). Ein Ergebnis dieser Bemühungen war die Synthese der ternären Legierung HgCdTe im Jahre 1958 von der Lawson Forschungsgruppe \cite{lawson} am Royal Radar Establishment in England. Die Bedeutung dieser Arbeit wurde schon früh erkannt. Das führte zu einer intensiven Entwicklung in zahlreichen Ländern wie England, Frankreich, Polen, Deutschland, der Sowjetunion sowie den USA [2]. Doch wurde über die Entwicklung in den ersten Jahren wenig veröffentlicht. Die Arbeiten in den USA zum Beispiel unterlagen der Geheimhaltung bis in die späten 60er Jahre. Die ersten Photodetektoren wurden in den USA bereits 1964 von Texas Instruments hergestellt.
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=90mm, keepaspectratio]{pic/1-sensor}
-\caption{\label{fermikante}Abbildung 1.1: HgCdTe in Infrarotkameras: Das Rockwell 2x2 2Kx2K Infrarot-Array Hawaii-2RG}
+\includegraphics[width=70mm, keepaspectratio]{pic/1-sensor}
+\caption[width=90mm]{\label{Rockwell}Abbildung 1.1: HgCdTe in Infrarotkameras: Das Rockwell 2x2 2Kx2K Infrarot-Array Hawaii-2RG}
+% \captionsetup{width=85mm}
 \end{center}
 \end{figure}
 
@@ -622,11 +624,13 @@ string datas()
 \end{verbatim}
 \normalsize
 
-\section{Veröffentlichungen}
-
-Eine kleine Liste all jener Veröffentlichungen, an denen ich teilgenommen habe.
-
 \begin{thebibliography}{99}
+  \bibitem{lawson} W. D. Lawson, S. Nielson, E. H. Putley, and A. S. Young. Preparation and properties of HgTe and mixed crystals of $\mathrm{HgTe}-\mathrm{CdTe}$. {\itshape J. Phys. Chem. Solids} {\bfseries 9}, 325-329 (1959).
+  \bibitem{long} D. Long and J. L. Schmit. Mercury-cadmium telluride and closely related alloys. {\itshape Semiconductors and Semimetals,} Vol. 5, pp. 175-255, edited by R. K. Willardson and A. C. Beer, Academic Press, New York (1970).
+  \bibitem{finger} Gert Finger, J. Garnett, N. Bezawada, R. Dorn, L. Mehrgan, M. Meyer, A. Moorwood, J. Stegmeier, G. Woodhouse. Performance evaluation and calibration issues of large format infrared hybrid active pixel sensors used for ground- and space-based astronomy. {\itshape Nuclear Instruments and Methods in Physics Research} {\bfseries A} 565 (2006) 241-250.
+  \bibitem{ives} Derek Ives, Nagajara Bezawada. Large area near infra-red detectors for astronomy. {\itshape Nuclear Instruments and Methods in Physics Research} {\bfseries A} 573 (2007) 107-110.
+  \bibitem{gillessen} S. Gillessen, et. al.  {\itshape The Messenger}  120 (2005) 26-32.
+  \bibitem{groves} S. H. Groves, R. N. Brown. C. R. Pidgeon. Interband Magnetoreflection and Band Structure of HgTe. {\itshape 161 (1967), 779.} {\bfseries 161} (1967), 779.
   \bibitem{hertz} H. Hertz: {\itshape Über den Einfluss des ultravioletten Lichtes 
 	auf die elektrische Entladung}. Ann. Phys. {\bfseries 31}, 983 (1887)
   \bibitem{hallwachs} W. Hallwachs: {\itshape Ueber den Einfluss des Lichtes auf 
@@ -637,14 +641,35 @@ Eine kleine Liste all jener Veröffentlichungen, an denen ich teilgenommen habe.
 	Phys. Rev. {\bfseries B} 5:4709 (1972)
 \end{thebibliography}
 
+\clearpage
+\cleardoublepage
 \pagestyle{empty}
 
-\chapter*{Acknowledgements / Danksagung}
+\chapter*{Danksagung}
+\thispagestyle{empty}
 
-Thanks, thanks and thanks again to all my friends that supported this work.
+Die Mitarbeit in einem wissenschaftlichen Team stellt den krönenden Abschluss meines Studiums dar. Daher möchte ich mich bei der Arbeitsgruppe EES für die freundliche Aufnahme und gute Zusammenarbeit bedanken. Neben ARPES konnte ich so viele andere Geheimnisse näher kennen lernen, die sich hinter Abkürzungen wie STM, XUV, LEED, EDX, SEM, AFM, EPR und BESSY verbergen. Mein Dank gilt insbesondere:
+
+\begin{itemize}
+  \item Prof. Manzke für die Bereitstellung des interessanten Themas und die Möglichkeit, in seiner Arbeitsgruppe ein so umfassendes Forschungsthema eigenständig bearbeiten zu können.
+  \item Dr. Krapf für die Unterstützung, den dreimonatigen Forschungsaufenthalt in Moskau zu organisieren.
+  \item Hr. Sölle für die Präparation und Zerteilung der Proben.
+  \item Der Werkstatt (insbesondere Hr. Rausche, Hr. Fahnauer und Frau Rosinska) für die gute Zusammenarbeit, die Hilfe beim Herstellen zahlloser Kleinteile und die Unterstützung bei der Reparatur einiger Gerätschaften.
+  \item \ru{Телегина Инна Васильевна} für die umfassende Laue-Untersuchung meiner Kristalle.
+  \item \ru{Никифоров Владимир Николаевич} für die Betreuung während des Moskauer Forschungsaufenthaltes.
+  \item den Korrekturlesern Gabi, Rahela, Susan und Horst für die große Mühe, all die kleinen Fehler zu entdecken, die sich eingeschlichen hatten. Danke auch für die guten Vorschläge zu besseren Formulierungen.
+  \item auch meiner Familie, die mit Geduld mein Studium begleitet hat und ohne deren Unterstützung das alles hier nicht möglich gewesen wäre.
+\end{itemize}
+\clearpage
 
 \chapter*{Erklärung}
+\thispagestyle{empty}
 
-Hiermit versichere ich, die vorliegende Arbeit ohne unerlaubte fremde Hilfe angefertigt zu haben. Ich gestatte Einsichtnahme in diese Diplomarbeit in der Fachbereichsbibliothek.
+Hiermit versichere ich, die vorliegende Arbeit ohne unerlaubte fremde Hilfe angefertigt zu haben. Es sind keine anderen als die angegebenen Quellen und Hilfsmittel benutzt worden. Ich gestatte Einsichtnahme in diese Diplomarbeit in der Fachbereichsbibliothek.
+\vspace{3cm}
+
+\begin{adjustwidth}{1cm}{1cm}
+Berlin, Januar 2008 \hfill Matthias Kreier
+\end{adjustwidth}
 
 \end{document}
