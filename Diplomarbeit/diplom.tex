@@ -20,6 +20,7 @@
 \newcommand\ru[1]{\foreignlanguage{russian}{#1}}  % um russische Texte einzubinden
 %\usepackage{ae}   % Die Umlaute werden dann wieder unschön, das ß geht verloren ... (in Palatino)
 \usepackage[pdftex,pdfpagelabels=true]{hyperref}
+\usepackage{booktabs}
 %\usepackage[pdftex]{thumbpdf}
 
 \makeatletter
@@ -48,6 +49,17 @@
  pdfkeywords	= {ARPES,CdHgTe},
  pdfcreator	  = {Adobe-Acrobat-Distiller},
  pdfproducer	= {LaTeX with hyperref and thumbpdf}
+}
+
+\newenvironment{mytable}[1]{
+  \begin{table}[h]
+  \centering
+  \begin{tabular}{#1}
+  \toprule\toprule
+}{
+  \bottomrule\bottomrule
+  \end{tabular}
+  \end{table}
 }
 
 \makeatother
@@ -103,7 +115,8 @@ Seine besonderen Eigenschaften erhält die ternäre Verbindung HgCdTe durch eine
 
 Ziel dieser Diplomarbeit ist die Untersuchung der elektronischen Struktur von CdxHg1-xTe mit x-Werten von 0,07 bis 0,4. Uns interessiert, wie sich die elektronische Bandstruktur beim Übergang vom Halbleiter zum ’zero-gap’-Halbleiter zum Halbleiter mit negativer Bandlücke verhält. Als verheißungsvoll erwies sich die Arbeit von N. Orlowski [7] an HgTe, in der das unter das VBM geklappte $\Gamma_6$-Band spektroskopisch aufgelöst werden konnte. Seine Ergebnisse von 2000 motivierte zweifellos zur Ausschreibung der folgenden Diplomarbeit im Jahre 2004:
 
-Elektronische Eigenschaften der II-VI-Halbleiterverbindungen Cd1-xHgxTe und Pb1-xSnxTe
+\begin{quote}
+Elektronische Eigenschaften der II-VI-Halbleiterverbindungen Cd\textsubscript{1-x}Hg\textsubscript{x}Te und Pb\textsubscript{1-x}Sn\textsubscript{x}Te
 
 Die in der Arbeit zu untersuchenden ternären Halbleiterverbindungen erlauben in Abhängigkeit von der Zusammensetzung eine weite Variation der fundamentalen Bandlücke, die nicht nur zu Null sondern sogar auch negativ gemacht werden kann (wird bei Nachfrage näher erläutert). Dabei wird das prinzipielle Auftreten einer negativen Bandlücke bei verschiedenen Halbleitern heute noch kontrovers diskutiert und eine direkte Untersuchungsmethode wie die winkelaufgelöste Photoemission könnte hier die Klärung bringen.
 
@@ -114,105 +127,83 @@ Photoemission die experimentelle Bandstruktur zu bestimmen und die Ergebnisse mi
 gen verschiedener Modelle zu vergleichen und zu diskutieren. Die Messungen sollen sowohl im
 Berliner Institut als auch teilweise mit Synchrotronstrahlung (BESSY in Berlin oder HASYLAB in
 Hamburg) durchgeführt werden.
+\end{quote}
 
-\ru{Добрый день, Добро пожаловать в \LaTeXе!}
-
-Even in the late 1970s Cd HgTe has been estimated and analyzed with electrons, photons and 
-of course neutrons.
-
-The crystals of HgTe and PbTe as well as CdTe and SnTe have been studied
-during the last tree decades very intensively. Whereas the first two
-are considered to be narrow bandgap \cite{hertz} semiconductors the latter two
-are semimetals. CdTe shows an inverted bulk bandstructure and has
-therefore a negative bandgap.
-
-Here I describe in two sentences the content of each chapter \cite{theorie1}.
-At least one citation will be included.
-
-
-The Fermi level lies between them in the gap \cite{shirley} and the oxide is an insulator.
-Both the ionic picture and the band theory are valid. The electronic excitation
-of lowest energy determines the gap width shown in Figure \ref{fermikante}. In
-this case, this is a charge-transfer excitation\footnote{excitation = Anregung}
-and corresponds to the transfer of an electron
-from the anion to the cation. The charge-transfer energy is denoted. In a
-partially occupied shell system, however, the oxide may be insulating though
-the band theory predicts a metallic state. This is because the representation
-of the repulsion between electrons by an average effective potential is not a
-good approximation anymore when electron correlation becomes important.
-This term describes the way electrons move in order to avoid each other and
-to the interatomic overlap. At a critical value around W (band width) 
-U, the upper and lower states overlap and the gap vanishes [5]. Zaanen et
-al. have classified the insulators using both parameters  and U in a phase
-diagram [17]. For a Mott-Hubbard insulator where E\textsubscript{gap} / U , both
-holes and electrons move in d bands and are heavy, while.
-
-Et nostrud delicatissimi mea, zzril aeterno ocurreret ut ius. Ius elitr adipisci gloriatur ad, vero augue graece ei nam. Et qui facilisis gloriatur scribentur, usu viris blandit expetenda eu. Sed ad eligendi legendos posidonium, et nostro intellegam vis. In nominati temporibus scriptorem vel. Ne cum takimata periculis definiebas, et inani zzril consequuntur mei, sit ei feugait hendrerit.
-
-Prompta complectitur ad sit, at eligendi oporteat deserunt eum. At duo puto commodo necessitatibus, mei nobis iisque aliquam ea. Duo cu oblique vivendo corrumpit. Ea dicat ubique alterum nam.
-
-Altera deterruisset eum eu, ne vix commodo partiendo democritum. Mel ut sint vulputate. Aperiri postulant mei cu, ius at atqui graeci salutatus. Id tale hinc sapientem eum, ad eum quod adhuc. Te sit sint accusam.
-
-Ex quem apeirian deseruisse nam, qui eu odio moderatius, augue sensibus erroribus te eum. Accusam adversarium definitionem an has, puto fabulas ne sed, an mel mazim malorum. Eam ne verear reformidans. Scaevola expetenda ei vel, sensibus mediocrem dignissim id usu, dictas verear suavitate mei ad. Nec ad definiebas disputando. Debitis habemus alienum in mea, menandri posidonium an mel.
-
-Vim quod voluptua cu. Veniam dicunt id mei. Primis perpetua mei eu, tibique concludaturque ad sea. Kasd pertinacia qui eu, ex deserunt neglegentur ius. Perpetua scribentur contentiones no mel, ei mel probatus singulis patrioque, eu modus patrioque definitiones quo.
-
-Omnes congue ad quo, ad dicat nonummy sit. Pri an amet consulatu, scaevola vivendum no usu. Ea usu commune torquatos liberavisse. Ius quot duis signiferumque no.
-
-Eos suscipit posidonium reprimique ne, nec forensibus comprehensam cu. Nec in sint aeterno sapientem, sea cu nonumy vidisse impedit. Te libris torquatos reprehendunt sea. Ea cum perpetua petentium intellegebat, oratio labore ceteros eu pri. Veniam gubergren contentiones est id.
-
-Modus invenire persecuti eu sit, dolor doming accusamus nec ei. Atqui explicari ea pro, at eos veri integre mentitum. Eu has assum nobis nominati. Nec ex suas scripserit. Quem magna cotidieque no sit. An esse iuvaret cotidieque eam, ne nulla aeque molestiae nec, virtute appareat quaestio an eos.
-
-Finally this chapter ends.
 
 \chapter{Eigenschaften von II-VI Halbleitern}
 \section{Kristallstruktur}
 
-Die Struktur von kristallinen Festkörpern wird durch das Gitter und die Basis beschrieben.
-Das Gitter ist eine dreidimensionale Anordnung von Punkten, deren kleinste Einheit die Ele-
-mentarzelle ist. Es wird durch die entsprechenden Gitterkonstanten sowie primitive Vektoren
-beschrieben. Die Basis deﬁniert die Anordnung der Atome in der Elementarzelle. Zu jeder
-Struktur gibt es ein entsprechendes reziprokes Gitter im reziproken Raum. In diesem wird die
-elektronische Struktur beschrieben. Die Wigner-Seitz-Zelle des reziproken Gitters heißt erste
-Brillouin-Zone.
+Die Struktur von kristallinen Festkörpern wird durch das Gitter und die Basis beschrieben. Das Gitter ist eine dreidimensionale Anordnung von Punkten, deren kleinste Einheit die Elementarzelle ist. Es wird durch die entsprechenden Gitterkonstanten sowie primitive Vektoren beschrieben. Die Basis deﬁniert die Anordnung der Atome in der Elementarzelle. Zu jeder Struktur gibt es ein entsprechendes reziprokes Gitter im reziproken Raum. In diesem wird die elektronische Struktur beschrieben. Die Wigner-Seitz-Zelle des reziproken Gitters heißt erste Brillouin-Zone.
 
-Abbildung 2.1: Zinkblendestruktur von HgCdTe. Die gelben Punkte re-
-präsentieren das Tellur. An den grauen Plätzen beﬁndet sich Cadmium
-mit einem Anteil von „x“ oder Quecksilber mit einem Anteil „1-x“.
+\begin{figure}
+  \centering
+  \includegraphics[width=80mm, keepaspectratio]{pic/zinkblende}
+  \caption[width=110mm]{ Zinkblendestruktur von HgCdTe. Die gelben Punkte repräsentieren das Tellur. An den grauen Plätzen beﬁndet sich Cadmium mit einem Anteil von „x“ oder Quecksilber mit einem Anteil „1-x“.}
+  \label{fig:Zinkblende}
+\end{figure}
 
-Die räumliche Struktur von HgCdTe wird als „Zinkblende-Struktur“ bezeichnet (Abbil-
-dung 2.1). Diese Struktur wird durch zwei kubisch-ﬂächenzentrierte (fcc) Elementarzellen ge-
-bildet, die um ein Viertel ihrer Raumdiagonalen gegeneinander verschoben sind. Hier bildet ein Tellur-Atom die Basis des ersten Gitters. Die Basis des zweiten Gitters wird zu x aus Cadmiumatomen gebildet und zu $1 - x$ aus Atomen von Quecksilber.
+Die räumliche Struktur von HgCdTe wird als „Zinkblende-Struktur“ bezeichnet (Abbildung~\ref{fig:Zinkblende}). Diese Struktur wird durch zwei kubisch-ﬂächenzentrierte (fcc) Elementarzellen gebildet, die um ein Viertel ihrer Raumdiagonalen gegeneinander verschoben sind. Hier bildet ein Tellur-Atom die Basis des ersten Gitters. Die Basis des zweiten Gitters wird zu x aus Cadmiumatomen gebildet und zu $1 - x$ aus Atomen von Quecksilber.
 
-Tabelle 2.1: Entfernungen der hochsymmetrischen Punkte vom Zentrum der Volumen-Brillouin-Zone
-des fcc-Gitters. Die formalen Werte für df sind angegeben, um aus einer beliebigen Gitterkonstante a
-die Entfernungen berechnen zu können.
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|c|c|c|c|}
+d    & $d_f$ / $\pi / a$   & d(HgTe) / \AA & d(CdTe) / \AA & d(X) / \AA \\
+\midrule
+$|\Gamma \Lambda L|$ & $\sqrt{3}/2$ & 1,478 & 1,485 & 1,4815 \\
+$|\Gamma \Delta X|$ & $1/2$ & 1,204 & 1,209 & 1,2065 \\
+$|\Gamma \Sigma K|$ & $\sqrt{2}/2$ & 1,703 & 1,711 & 1,707 \\
+$|\Gamma W|$ & $\sqrt{11}/4$ & 1,482 & 1,489 & 1,4855 \\
+$|\Gamma U|$ & $\sqrt{2}/4$ & 0,852 & 0,856 & 0,854 \\
+$|\Gamma K X|$ & $\sqrt{3}/4$ & 1,043 & 1,048 & 1,0455 \\
+\end{tabular}
+\caption{Entfernungen der hochsymmetrischen Punkte vom Zentrum der Volumen-Brillouin-Zone des fcc-Gitters. Die formalen Werte für df sind angegeben, um aus einer beliebigen Gitterkonstante $a$ die Entfernungen berechnen zu können.}
+\label{tab:brillouin}
+\end{table}
 
-In dieser Kristallstruktur ist jedes Atom tetraedrisch von vier nächsten Nachbarn der ande-
-ren Atomsorte umgeben. Die Ursache ist die Hybridisierung der s- und p-Orbitale der Valenz-
-elektronen zu sp3-Hybridorbitalen. Sie schließen einen Bindungswinkel von 109,5◦ ein.
 
-Die Gitterkonstanten von HgTe und CdTe unterscheiden sich um weniger als 0.7% vonein-
-ander. Für die ternären Verbindung Hg1-xCdxTe folgt sie entsprechend dem Kompositionspa-
-rameter x der empirischen Formel $a = 6, 4614 + 0, 00084x + 0, 0168x2 - 0, 0057x3$ [8] .
+% Tabelle 2.1: Entfernungen der hochsymmetrischen Punkte vom Zentrum der Volumen-Brillouin-Zone des fcc-Gitters. Die formalen Werte für df sind angegeben, um aus einer beliebigen Gitterkonstante $a$ die Entfernungen berechnen zu können.
+
+% |ΓΛL|
+% |Γ∆X|
+% |ΓΣK|
+% |ΓW|
+% |ΓU|
+% |ΓK X |
+
+In dieser Kristallstruktur ist jedes Atom tetraedrisch von vier nächsten Nachbarn der anderen Atomsorte umgeben. Die Ursache ist die Hybridisierung der s- und p-Orbitale der Valenzelektronen zu sp3-Hybridorbitalen. Sie schließen einen Bindungswinkel von 109,5◦ ein.
+
+Die Gitterkonstanten von HgTe und CdTe unterscheiden sich um weniger als 0.7\% voneinander. Für die ternären Verbindung Hg1-xCdxTe folgt sie entsprechend dem Kompositionsparameter $x$ der empirischen Formel $a = 6, 4614 + 0, 00084x + 0, 0168x2 - 0, 0057x3$ [8] .
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|c}
+\hline\hline
+Substanz & $a$ / \AA \\ \hline
+HgTe & 6,445 [9] \\ 
+Hg\textsubscript{0.8}Cd\textsubscript{0.2}Te & 6,464 [10] \\ 
+CdTe & 6,488 [9] \\ 
+\end{tabular}
+\end{table}
 
 Das Kristallgitter wird durch folgende primitive Vektoren beschrieben:
 
+$$\vec{a_1} = \frac{a}{2} \begin{pmatrix} 0 \\ 1 \\ 1 \end{pmatrix}, \quad
+\vec{a_2} = \frac{a}{2} \begin{pmatrix} 1 \\ 0 \\ 1 \end{pmatrix}, \quad
+\vec{a_3} = \frac{a}{2} \begin{pmatrix} 1 \\ 1 \\ 0 \end{pmatrix}$$
 
 Gemäß Deﬁnition ergeben sich daraus die zugehörigen reziproken Gittervektoren:
 
+$$\vec{b_1} = \frac{2\pi}{a} \begin{pmatrix} -1 \\ 1 \\ 1 \end{pmatrix}, \quad
+\vec{b_2} = \frac{2\pi}{a} \begin{pmatrix} 1 \\ -1 \\ 1 \end{pmatrix}, \quad
+\vec{b_3} = \frac{2\pi}{a} \begin{pmatrix} 1 \\ 1 \\ -1 \end{pmatrix}$$
+
 \section{Volumen-Brillouin-Zone}
 
-Aus diesen reziproken Gittervektoren resultiert ein reziprokes Gitter, das kubisch raumzen-
-triert (bcc, body centered cubic) ist. Die erste Brillouin-Zone ist das in Abbildung 2.2 darge-
-stellte abgestumpfte Oktaeder. Die Abbildung zeigt einen Schnitt durch die Volumen-Brillouin-
-Zone sowie die Oberﬂächen-Brillouin-Zonen, die den Flächen (110) und (001) entspechen.
+Aus diesen reziproken Gittervektoren resultiert ein reziprokes Gitter, das kubisch raumzentriert (bcc, body centered cubic) ist. Die erste Brillouin-Zone ist das in Abbildung 2.2 dargestellte abgestumpfte Oktaeder. Die Abbildung zeigt einen Schnitt durch die Volumen-Brillouin-Zone sowie die Oberﬂächen-Brillouin-Zonen, die den Flächen (110) und (001) entspechen.
 
-Ebenfalls eingezeichnet sind die hochsymmetrischen Punkte $\mathrm{\Gamma}$, X, L, K, W und U. Es ﬁnden
-sich auch die drei hochsymmetrischen Richtungen $\Delta$, $\Sigma$ und $\Lambda$. Sie entsprechen den Richtungen
-[001],[110] und [111]. Die jeweiligen Abstände können in Tabelle 2.1 abgelesen werden.
+Ebenfalls eingezeichnet sind die hochsymmetrischen Punkte $\mathrm{\Gamma}$, X, L, K, W und U. Es ﬁnden sich auch die drei hochsymmetrischen Richtungen $\Delta$, $\Sigma$ und $\Lambda$. Sie entsprechen den Richtungen [001],[110] und [111]. Die jeweiligen Abstände können in Tabelle 2.1 abgelesen werden.
 
-Volumen-Brillouin-Zone
+
 
 Abbildung 2.2: Volumen-Brillouin-Zone des fcc-Gitters sowie Oberﬂächen-Brillouin-
 Zonen der idealen (001) und (110) Oberﬂächen. Einige hochsymmetrische Punkte
@@ -221,151 +212,372 @@ sind eingezeichnet. Die Richtungen $\Delta$, $\Sigma$ und $\Lambda$ entsprechen 
 
 \section{Oberﬂächeneigenschaften}
 
-An der Oberﬂäche kommt es zu einem Bruch der Translationssymmetrie des Volumenkristalls.
-Man kann daher die Oberﬂäche als eine Störung auffassen; das Kristall nimmt einen Zustand
-minimaler Energie an. In der idealen Oberﬂäche besetzen die Oberﬂächenatome eine wohldeﬁ-
-nierte Gitterebene des Volumenkristalls, ihre Periodizität wäre somit festgelegt. Dieser Zustand
-ist jedoch äußerst selten der Fall.
+An der Oberﬂäche kommt es zu einem Bruch der Translationssymmetrie des Volumenkristalls. Man kann daher die Oberﬂäche als eine Störung auffassen; das Kristall nimmt einen Zustand minimaler Energie an. In der idealen Oberﬂäche besetzen die Oberﬂächenatome eine wohldeﬁnierte Gitterebene des Volumenkristalls, ihre Periodizität wäre somit festgelegt. Dieser Zustand ist jedoch äußerst selten der Fall.
 
-Die einfachste Abweichung von der idealen Oberﬂäche wird als Relaxation bezeichnet. Hier-
-bei treten einheitliche Verschiebung der obersten oder der oberen Lagen gegenüber dem Volu-
-men auf. Von einer Rekonstruktion spricht man, wenn die Atome der obersten Lage periodisch
-gegeneinander verschoben sind und eine Überstruktur bilden [11].
+Die einfachste Abweichung von der idealen Oberﬂäche wird als Relaxation bezeichnet. Hierbei treten einheitliche Verschiebung der obersten oder der oberen Lagen gegenüber dem Volumen auf. Von einer Rekonstruktion spricht man, wenn die Atome der obersten Lage periodisch gegeneinander verschoben sind und eine Überstruktur bilden [11].
 
-Die natürliche Spaltﬂäche der II-VI-Halbleiter (wie auch HgCdTe) ist die (110)-Fläche. Durch
-ein Spalten der Probe im Vakuum lässt sich diese Oberﬂäche am einfachsten generieren. Alle
-Messungen dieser Arbeit wurden daher an dieser Oberﬂäche durchgeführt. Andere Oberﬂä-
-chen sind weitaus schwieriger herzustellen, wie zum Beispiel die (001)-Oberﬂäche [7].
+Die natürliche Spaltﬂäche der II-VI-Halbleiter (wie auch HgCdTe) ist die (110)-Fläche. Durch ein Spalten der Probe im Vakuum lässt sich diese Oberﬂäche am einfachsten generieren. Alle Messungen dieser Arbeit wurden daher an dieser Oberﬂäche durchgeführt. Andere Oberﬂächen sind weitaus schwieriger herzustellen, wie zum Beispiel die (001)-Oberﬂäche [7].
 
 Abbildung 2.3: Geometrie der (110)-Oberﬂäche der Zinkblende-Struktur [12] im Querschnitt und in
 der Draufsicht. Die Parameter der Oberﬂäche sind ax = a
 
-Die (110)-Oberﬂäche enthält ebenso viele Anionen wie Kationen und ist daher energetisch
-begünstigt. Es handelt sich um eine unpolare Oberﬂäche. Bei der Spaltung relaxiert die (110)-
-Oberﬂäche. Die Anionen entfernen sich von der Oberﬂäche, während sich die Kationen auf das
-Kristall zu bewegen. Für diese Oberﬂäche wurde ein universales Modell entwickelt, das unab-
-hängig von der Substanz gültig ist [13]. Hierbei bleiben die Bindungslängen nahezu erhalten,
-die Symmetrie parallel zur Oberﬂäche wird nicht geändert.
+Die (110)-Oberﬂäche enthält ebenso viele Anionen wie Kationen und ist daher energetisch begünstigt. Es handelt sich um eine unpolare Oberﬂäche. Bei der Spaltung relaxiert die (110)-Oberﬂäche. Die Anionen entfernen sich von der Oberﬂäche, während sich die Kationen auf das Kristall zu bewegen. Für diese Oberﬂäche wurde ein universales Modell entwickelt, das unabhängig von der Substanz gültig ist [13]. Hierbei bleiben die Bindungslängen nahezu erhalten, die Symmetrie parallel zur Oberﬂäche wird nicht geändert.
 
-An der Oberﬂäche wird die Anion-Kation-Bindung aufgebrochen. Bei der Relaxation kommt
-es zu einem Ladungstransfer vom Kation-’dangling bond’ zum Anion-’dangling-bond’. Das
-’dangling-bond’ am Kation wird vollständig geleert und am Anion entsprechend vollständig
-besetzt. Jedes Oberﬂächenatom besitzt nur noch drei der ursprünglich vier Nachbarn. So hat
-jedes Anion (Kation) der Oberﬂäche zwei Bindungen zu einem Oberﬂächen-Kation (Anion), ei-
-ne zu einem Kation (Anion) im Volumen gerichtete Bindung sowie eine ins Vakuum gerichtete
-freie Valenz (’dangling bond’). Es kommt daher zu einer Dehybridisierung der sp3-Orbitale.
-Die Anionen nehmen eine s2p3 Koordination an, die Kationen
+An der Oberﬂäche wird die Anion-Kation-Bindung aufgebrochen. Bei der Relaxation kommt es zu einem Ladungstransfer vom Kation-’dangling bond’ zum Anion-’dangling-bond’. Das
+’dangling-bond’ am Kation wird vollständig geleert und am Anion entsprechend vollständig besetzt. Jedes Oberﬂächenatom besitzt nur noch drei der ursprünglich vier Nachbarn. So hat jedes Anion (Kation) der Oberﬂäche zwei Bindungen zu einem Oberﬂächen-Kation (Anion), eine zu einem Kation (Anion) im Volumen gerichtete Bindung sowie eine ins Vakuum gerichtete freie Valenz (’dangling bond’). Es kommt daher zu einer Dehybridisierung der sp\textsuperscript{3}-Orbitale. Die Anionen nehmen eine s\textsuperscript{2}p\textsuperscript{3} Koordination an, die Kationen erhalten eine planare sp\textsubscript{2} Koordination. Das vom Anion-’dangling-bond’-abgeleitete Band senkt sich energetisch ab. Es verschiebt sich zum oberen Rand des Volumen-Valenzbandes.
+
 
 \chapter{Theoretische Grundlagen der Photoemission}
 
 
-Um geeignete Materialien in Bauelementen wie Solarzellen, Detektoren oder integrierten Schalt-
-kreisen verwenden zu können, muss ihre elektronische und strukturelle Charakteristik bekannt
-sein. Dazu gehören ebenfalls die Transporteigenschaften des Materials. Die Bestimmung der
-elektronischen Bandstruktur ist hierzu eines der wichtigsten Hilfsmittel.
+Um geeignete Materialien in Bauelementen wie Solarzellen, Detektoren oder integrierten Schaltkreisen verwenden zu können, muss ihre elektronische und strukturelle Charakteristik bekannt sein. Dazu gehören ebenfalls die Transporteigenschaften des Materials. Die Bestimmung der elektronischen Bandstruktur ist hierzu eines der wichtigsten Hilfsmittel.
 
-Eine leistungsfähige Methode, die direkte Zustandsdichte und die impulsaufgelöste Ener-
-giebandstruktur zu bestimmen, ist die Photoelektronspektroskopie. Im Rahmen dieser Diplom-
-arbeit ﬁndet insbesondere die winkelaufgelöste Photoelektronspektroskopie oder ARPES1 An-
-wendung. Im Folgenden werden ihre physikalischen Grundlagen erläutert.
+Eine leistungsfähige Methode, die direkte Zustandsdichte und die impulsaufgelöste Energiebandstruktur zu bestimmen, ist die Photoelektronspektroskopie. Im Rahmen dieser Diplomarbeit ﬁndet insbesondere die winkelaufgelöste Photoelektronspektroskopie oder ARPES\footnote{ARPES - \underline{A}ngle \underline{R}esoved \underline{P}hoto \underline{E}lectron \underline{S}pectroscopy} Anwendung. Im Folgenden werden ihre physikalischen Grundlagen erläutert.
 
 
 \section{Messprinzip der Photoelektronspektroskopie}
 
-Die Photoelektronspektroskopie basiert auf dem so genannten äußeren Photoeffekt. Dieses
-physikalische Phänomen wurde bereits 1887 von H. Hertz [14] und 1888 von W. Hallwachs
-[15] entdeckt und untersucht. Die richtige Deutung erfolgte durch A. Einstein im Jahre 1905
-([16], Nobelpreis 1921). Der Effekt wird durch die folgende Formel beschrieben:
+Die Photoelektronspektroskopie basiert auf dem so genannten äußeren Photoeffekt. Dieses physikalische Phänomen wurde bereits 1887 von H. Hertz [14] und 1888 von W. Hallwachs [15] entdeckt und untersucht. Die richtige Deutung erfolgte durch A. Einstein im Jahre 1905 ([16], Nobelpreis 1921). Der Effekt wird durch die folgende Formel beschrieben:
 
 $$
 E^{max}_{kin} = h\nu - \Phi.
 $$
 
-Sie gibt die maximale kinetische Energie $E^{max}_{kin}$ an, mit der Elektronen bei Anregung mit
-Strahlung der Energie $h\nu$ aus einem Metall austreten. Hier ist h das Plancksche Wirkungs-
-quantum, $\nu$ die Frequenz des ionisierenden Photons und $\Phi$ die Austrittsarbeit des angeregten
-Materials.
+Sie gibt die maximale kinetische Energie $E^{max}_{kin}$ an, mit der Elektronen bei Anregung mit Strahlung der Energie $h\nu$ aus einem Metall austreten. Hier ist h das Plancksche Wirkungsquantum, $\nu$ die Frequenz des ionisierenden Photons und $\Phi$ die Austrittsarbeit des angeregten Materials.
 
-Abhängig von der Energie der anregenden Photonen spricht man in der Photoelektronen-
-spektroskopie von UPS2 oder XPS3, wobei UPS Photonenenergien im UV-Bereich (10 bis 100
-eV) bezeichnet und XPS Photonen im Röntgenbereich (> 1000 eV). Auf Grund ihrer höhe-
-ren Energie werden durch XPS auch Rumpfelektronen angeregt. In Abhängigkeit der chemi-
-schen Umgebung zeigen XPS-Spektren Unterschiede in den Bindungsenergien eines Rumpf-
+Abhängig von der Energie der anregenden Photonen spricht man in der Photoelektronenspektroskopie von UPS\footnote{UPS - Ultraviolet Photoemission Spectroscopy, UV-Photoemission} oder XPS\footnote{XPS - X-Ray Photoemission Spectroscopy, Röntgenphotoemission}, wobei UPS Photonenenergien im UV-Bereich (10 bis 100
+eV) bezeichnet und XPS Photonen im Röntgenbereich (> 1000 eV). Auf Grund ihrer höheren Energie werden durch XPS auch Rumpfelektronen angeregt. In Abhängigkeit der chemischen Umgebung zeigen XPS-Spektren Unterschiede in den Bindungsenergien eines Rumpfelektrons. In vielen Fällen kann aus der Form der Spektren Aufschluss über den Valenzzustand eines Elementes gegeben werden. Diese chemische Analyse ist unter der Bezeichnung ECSA (Electron Spectroscopy for Chemical Analysis) bekannt.
 
-1ARPES - Angle Resoved Photo Electron Spectroscopy
-2UPS - Ultraviolet Photoemission Spectroscopy, UV-Photoemission
-3XPS - X-Ray Photoemission Spectroscopy, Röntgenphotoemission
+Demgegenüber werden in UPS nur Valenzelektronen und Elektronen aus hochgelegten Rumpfniveaus angeregt. UPS eignet sich daher zur Untersuchung der Valenzbandstruktur von
+Halbleitern. In ARPES werden die emittierten Elektronen winkel- und energieaufgelöst detektiert. Das Prinzip wird in Abbildung 3.1 verdeutlicht.
 
-To study the electronical properties of a material we use the photoelectric effect, that is
-the emission of electrons upon the absorption of electromagnetic radiation. This effect was 
-discovered by Heinrich Hertz (1886 Hertz effect, \cite{hertz}) and his assistant Wilhelm Hallwachs 
-(1887 Hallwachs effect, \cite{hallwachs}). Max Planck published in 1901 his law of radiation. He went on 
-to state that the energy lost or gained by an oscillator is emitted or absorbed as a quantum 
-of radiant energy, the magnitude of which is expressed by the equation:
+\section{Das Drei-Stufen-Modell}
 
-\[E=h\nu\]
+Es gibt eine Vielzahl erfolgreicher theoretischer Beschreibungen des Photoemissionsprozesses. In der Praxis hat sich das anschauliche Drei-Stufen-Modell [17] durchgesetzt. Im Einteilchenbild gliedert sich der Prozess damit in die folgenden drei unabhängigen Schritte [18]:
 
-E equals the radiant energy, h is Planck's constant and $\nu$ is the frequency of radiation. 
-In 1905 Albert Einstein applied Planck's theory and explained the photoelectric effect in terms of 
-the quantum model using his famous equation for which he received the Nobel Prize in 1921:
+\begin{itemize}
+  \item Absorption des Photons und Anregung eines Elektrons aus einem Anfangszustand im Valenzband in einen Endzustand im Leitungsband
+  \item Transport des angeregten Elektrons zur Oberﬂäche des Festkörpers
+  \item Austritt des Elektrons durch die Oberﬂäche ins Vakuum
+\end{itemize}
 
-\begin{equation}
-E_{kin}^{max}=h\nu - \Phi
-\end{equation}
+Die einzelnen Schritte dieses Modells werden im Folgenden einzeln beschrieben.
 
-The maximum kinetic energy $E_{kin}$ of the emitted photoelectrons equals the photon energy $h\nu$ minus the 
-energy $\Phi$ needed to remove them from the surface of the material. This binding energy  $\Phi$ is 
-also called the work function. The inverse relation to [Gleichung von ebenda] exists between the maximum 
-energy of the Xray radiation and the electron energy the matter is irradiated.
+\subsection*{Schritt 1: Anregung des Elektrons}
 
-Angle resolved - why ... ARPES
-If photon is UV it is called UPS or UVPES and XPS for x-ray.
+Der erste Schritt beschreibt die Photoionisation. Lokal wird ein Photon absorbiert und ein Elektron angeregt. Dieser Prozess lässt sich mit der zeitabhängigen Störungstheorie erklären [19].
+
+Die Übergangsrate $T_{f →i}$ für ein Elektron von einem Anfangszustand $\left| \Phi_i \right\rangle$ mit einer Anfangsenergie $E_i$ in einen Endzustand $\left| \Phi_f \right\rangle$ mit der Energie $E_f$ ist durch Fermis Goldene Regel gegeben:
+
+$$T_{f →i} = \frac{2\pi}{\hbar} \left| \left\langle \Phi_f \right| H_{int} \left| \Phi_i \right\rangle \right|^2 \delta(E_f - E_i - h\nu)$$
+
+Hierbei bezeichnet $\hbar \omega$ die Energie des Photons. Die Wechselwirkung zwischen Elektron und Photon wird durch den Hamiltonoperator $H_{WW}$ beschrieben. In Coulomb-Eichung und linearer Näherung lautet dieser
+
+$$H_{WW} = \frac{e}{2mc} \vec{A} \cdot \vec{p}$$
+
+Das Vektorpotential der einfallenden elektromagnetischen Strahlung ist durch (cid:126)A gegeben
+und beinhaltet Eigenschaften wie Frequenz, Phase und Polarisation. (cid:126)p ist der quantenmecha-
+nische Impulsoperator (cid:126)p = i(cid:126). Die Energieerhaltung fordert, dass nur Übergänge vorkom-
+men, die der Relation Ef = Ei + (cid:126) genügen. Diese Bedingung wird in Formel 3.2 durch die
+-Funktion berücksichtigt.
+
+Es seien die Wellenvektoren des Anfangs- und Endzustandes mit (cid:126)ki und (cid:126)kf gegeben. Der
+Photonenimpuls kann bei den geringen Anregungsenergien von ARPES gegenüber dem Elek-
+tronenimpuls vernachlässigt werden. Wir erhalten daher wellenvektorerhaltende direkte Über-
+gänge. Die Impulserhaltung lautet somit:
+
+$$\vec{k_i} = \vec{k_f} + \vec{k}$$
+
+Die Übergangswahrscheinlichkeit wird im wesentlichen durch das Betragsquadrat des Über-
+gangsmatrixelementes in Gleichung 3.2 bestimmt. Dieses hängt sowohl vom Anfangszustand
+|i(cid:105) als auch vom Endzustand |f (cid:105) ab. In der Photoemission wird daher eine Kombination aus
+beiden Zustandsdichten gemessen.
+
+\subsection*{Schritt 2: Transport des angeregten Elektrons zur Oberﬂäche}
+
+Die Photonen dringen mehrere 100 Å in den Festkörper ein und regen Elektronen an. Beim
+Transport zur Oberﬂäche verlieren einige Elektronen durch inelastische Stöße kinetische Ener-
+gie. Dabei geht die Information über den Anfangszustand verloren. Die mittlere freie Weglänge
+der Elektronen in Abhängigkeit von ihrer kinetischen Energie ist in Abbildung 3.3 gezeigt. Die-
+se „universelle Kurve“ ergibt sich aus Messungen, die an verschiedenen Materialien durchge-
+führt wurden. Die eingetragenen Messpunkte verdeutlichen, dass die mittlere freie Weglänge
+weitgehend unabhängig vom Material ist.
+
+Aus der Abbildung ist ersichtlich, dass die mittlere freie Weglänge bei den in UPS übli-
+chen Anregungsenergien nur einige Angström beträgt. Damit ist der Transport zur Oberﬂäche
+der limitierende Schritt der PES und begründet seine Oberﬂächensensitivität. Messungen der
+Photoemission repräsentieren nur die obersten Atomschichten. Sie erfordern ein gutes Vaku-
+um, um eine Bedeckung der Oberﬂäche mit Fremdatomen zu verhindern. Weiterhin werden
+besondere Anforderungen gestellt, um zuvor eine geeignete Oberﬂäche zu erhalten.
+
+Abbildung 3.2: Photoemissionsprozess und zugehörige Energieverhältnisse für Probe und Analysator.
+Die einzelnen Energien werden im Text erläutert.
+
+Abbildung 3.3: Energieabhängige mittlere freie Weglänge
+von Elektronen im Festkörper [20].
+
+Abbildung 3.4: Brechung der Elektro-
+nen an der Kristalloberﬂäche. (cid:126)K Wellen-
+vektor im Vakuum, (cid:126)kf Wellenvektor des
+Endzustandes im Kristall
+
+Der dominierende Stoßprozess ist die Elektron-Elektron Streuung. Durch diesen Prozess
+wird ein Spektrum von niederenergetischen Sekundärelektronen generiert, die später im Pho-
+toemissionsspektrum sichtbar sind (siehe Abbildung 3.2). Die Elektron-Phonon Wechselwir-
+kung hat nur bei sehr geringen Energien eine Bedeutung [18].
+
+\subsection*{Schritt 3: Durchtritt des Elektrons vom Festkörper ins Vakuum}
+
+Der dritte Schritt ist mit einer Brechung verbunden. Wir können das angeregte Elektron inner-
+halb des Kristalls als quasi-frei betrachten. Die Energie-Impuls-Beziehung für den Endzustand
+(cid:126)kf vor dem Durchtritt durch die Oberﬂäche lautet daher
+
+$$E_f = \frac{\hbar^2 k_f^2}{2m} - |E_0|$$
+
+Der Wellenvektor (cid:126)kf zerlegt sich in seine Anteile (cid:126)kf (cid:107) parallel zur Probenoberﬂäche und (cid:126)kf 
+senkrecht zur Oberﬂäche (siehe Abbildung 3.4). Aufgrund der Translationsinvarianz bleibt die
+parallele Komponente beim Durchtritt bis auf einen reziproken Gittervektor oder Oberﬂächen-
+gittervektor (cid:126)g(cid:107) erhalten:
+
+$$\vec{k_{||}} = \vec{k_f{||}} + \vec{g}$$
+
+Die Addition eines solchen reziproken Gittervektors bezeichnet man als Umklappprozess.
+Betrachten wir die Emission unter einem Winkel $\vartheta$ zur Probennormalen und vernachlässigen
+Umklappprozesse (d. h. (cid:126)g(cid:107) = 0), so erhalten wir für die Parallelkomponente des Wellenvektors:
+
+$$k_{||} = k_f \sin \vartheta = \frac{1}{\hbar} \sqrt{2m(E_{kin} + |E_0|)} \sin \vartheta$$
+
+Die senkrechte Komponente bleibt nicht erhalten, da das Kristallpotential V0 außerhalb des
+Festkörpers nicht vorhanden ist. Dies führt zu einer Verkürzung der senkrechten Komponente.
+Dennoch können wir über sie eine Aussage machen, wenn wir als Endzustände freie Elektro-
+nenparabeln annehmen. Die kinetische Energie ist dann wie folgt gegeben:
+
+$$E_{kin} = \frac{\hbar^2 (k_{||}^2 + k_{\perp}^2)}{2m} - |E_0|$$
+
+Die reziproken Volumengittervektoren (cid:126)G repräsentieren die jeweiligen Elektronenparabeln.
+Der Wellenvektor (cid:126)kf lässt sich in seine Komponenten (cid:126)kf = (cid:126)kf (cid:107) + (cid:126)$k_{f\perp}$ zerlegen. Das Ergebnis
+von Gleichung (3.6) kann in diesen Ansatz eingesetzt werden. In senkrechter Emission ($\vartheta = 0$)
+erhalten wir:
+
+$$k_{\perp} = \frac{1}{\hbar} \sqrt{2m(E_{kin} + |E_0|)}$$
+
+Hier wurde der Volumengittervektor (cid:126)G in seine Komponenten zerlegt. Jedoch kann (cid:126)G(cid:107) auch
+ein reziproker Oberﬂächengittervektor sein. Aufgrund der Impulserhaltung (3.4) kann so aus
+(3.6) und (3.8) die gemessene Zustandsdichte einem bestimmten Punkt in der Brillouin-Zone
+zugeordnet werden. Durch ein systematisches Abrastern des k-Raumes kann auf diese Weise
+die Bandstruktur E((cid:126)k, (cid:126)k(cid:107)) = E((cid:126)k) bestimmt werden. In der Praxis erfolgt dies entlang hoch-
+symmetrischer Richtungen.
+
+Ei
+Ef
+EV BM Valenzbandmaximum
+Evac,S Vakuumenergie der Probe
+Evac,A Vakuumenergie des Analysators
+(cid:126)$\omega$
+Ub
+Ethr
+Ekin,S kinetische Energie der Elektrons
+
+Energie des Photons
+Bindungsenergie
+Photoemissionsschwellwert
+
+bezüglich der Probe (Sample)
+
+Ekin,A kinetische Energie des Elektrons
+bezüglich des Analysators
+Kontaktpotential
+Austrittsarbeit der Probe
+Austrittsarbeit des Analysators
+Fermi-Energie
+
+Abbildung 3.5: Energieniveauschema für die Photoemission an Probe und Analysator
+
+Aus der kinetischen Energie der emittierten Elektronen lassen sich Informationen über die
+Bindungsenergien im Kristall erhalten. Ist die Energie Uthr des Photoemissionsschwellwertes
+bekannt, so kann die Bindungsenergie bezüglich des Valenzbandmaximums durch folgende
+Formel bestimmt werden:
+
+$$E_B = h\nu - (E_{kin,S} + U_{thr})$$
+
+Hier muss zwischen der kinetischen Energie bezüglich der Probe Ekin,S und bezüglich des
+Analysators Ekin,A unterschieden werden. Die relativen Energieverhältnisse sind in Abbildung
+3.5 noch einmal gesondert dargestellt. Der Unterschied zwischen den beiden kinetischen Ener-
+gien entspricht dem Kontaktpotential UK. Es ergibt sich aus der Differenz der Austrittsarbeiten
+von Probe und Analysator
+
+$$E_{kin,S} = E_{kin,A} - U_K$$
+
+In den Gleichungen (3.6), (3.8) und (3.9) bezeichnet Ekin die kinetische Energie bezüglich
+der Probe. Letzten Endes wird die kinetische Energie jedoch im Analysator bestimmt. Die maxi-
+mal gemessene kinetische Energie hängt damit nur von der Energie der anregenden Photonen
+und der Austrittsarbeit des Analysators ab - siehe auch die eingangs erwähnte Formel (3.1). Im
+Falle eines untersuchten Metalls entspricht diese der Fermi-Energie. Somit ist die gemessene
+energetische Lage der Fermi-Kante unabhängig von der Austrittsarbeit der Probe.
+
+Dieser spezielle Umstand des elektrostatischen Elektronenanalysators wird z. B. in der Un-
+tersuchung von HTSCs\footnote{HTSC - \underline{H}igh \underline{T}emperature \underline{S}upra\underline{C}onductor, Hochtemperatursupraleiter oder High-T\textsubscript{C}-Supraleiter
+} genutzt. Es werden die Spektren einer Probe aufgenommen, die von
+besonderem Interesse sind. Anschließend wird die Probe an einer speziellen Stelle der Vaku-
+umkammer mit amorphen Gold bedampft. Danach wird die Fermi-Kante der so präparierten
+Oberﬂäche gemessen. Dies dient als Referenzpunkt für Bindungsenergien. Im Rahmen dieser
+Diplomarbeit wurden die gemessenen Spektren ebenfalls auf die Fermi-Energie bezogen, deren
+Lage mit einer amorphen Goldprobe bestimmt wurde.
+
+Außerdem ist es möglich, auf diese Weise die Austrittsarbeit der untersuchten Probe selbst
+zu bestimmen. Die bestimmte Fermi-Energie ist bei jeder Messung an derselben Stelle, weil
+das gesamte Spektrum beim Eintritt in den Analysator verschoben wird. Der Betrag der Ver-
+schiebung ist durch die Kontaktspannung gegeben (Abbildung 3.5). Die meisten Analysatoren
+sind innen mit Graphit beschichtet, welches eine geringe Austrittsarbeit von 4,14 eV besitzt.
+Die minimale kinetische Energie der Sekundärelektronen beim Austritt aus der Probe beträgt
+0 eV. Diese Kante wird ebenfalls um die Kontaktspannung UK verschoben. Aus der mit dem
+Analysator bestimmten niederenergetischen Grenze der Sekundärelektronen kann damit die
+Austrittsarbeit der Probe bestimmt werden.
+
+\section{Auswertung der Messdaten und Spektren}
+\subsection{Konstanter Untergrund}
+
+Die zur Detektion der Elektronen eingesetzten elektronischen Bauelemente (u. a. Channeltron,
+Operationsverstärker) besitzen ein charakteristisches Eigenrauschen. Dieses Rauschen verur-
+sacht einen energieunabhängigen konstanten Untergrund IB. Betrachten wir die Intensität Ii
+an einem Messpunkt oder Kanal i. Dieser Wert Ii kann der Intensität bei einer bestimmten
+Energie I(E) zugeordnet werden. Diese Intensität sollte bei kinetischen Energien oberhalb der
+Fermi-Energie Null betragen. Damit lässt sich der konstante Untergrund IB bestimmen und
+von den Messdaten abziehen [21]:
+
+$$I^{'}_{i,corr} = I_i - I_B$$
+
+In den letzten Jahrzehnten sind große Fortschritte in der Technologie der Detektoren sowie
+ihrer Elektronik gemacht worden. Oftmals besitzen sie eine Einstellmöglichkeit für die Rausch-
+unterdrückung [19]. So kann dieser Anpassungsschritt heute meist entfallen.
+
+\subsection{Subtraktion des inelastischen Untergrundes}
+
+Insbesondere bei Anregung durch die He-Gasentladungslampe ist das gemessene Spektrum
+von einem deutlichen inelastischen Untergrund überlagert (siehe Abbildung 3.6 im Vergleich
+zu Abbildung 7.4). Ein wichtiger Unterschied ist die Größe des Fokus, in dem die Anregung
+erfolgt. An der BUS5-Beamline liegt der Durchmesser des bestrahlten Fleckes im Bereich von
+100 µm. Das ermöglicht bei empﬁndlichen Proben ein „Abrastern“ der Oberﬂäche [23]. Dem-
+gegenüber regen die Photonen der He-Lampe HIS 13 trotz Fokussierspiegel einen Bereich von
+ca. 1mm Durchmesser an [19].
+
+Abbildung 3.6: Valenzbandspektrum von HgCdTe mit inelastischem Unter-
+grund, berechnetem Untergrundsignal und dem Spektrum ohne Untergrund.
 
 
-\[E=mc^{2}\]
+Wir betrachten wieder die Intensität I (cid:48)
 
-As you can see, the intensity not only depends on the wavefunction of the incomming light but due to the vector potential to the azimuth and polar angle. This is discovered by an spherical analysator (Scienta SES 100) with a multichannel plate.
+i an einem Messpunkt i. Zur Korrektur der inelasti-
+schen Streuung wird von der Intensität I (cid:48)
+i ein Betrag abgezogen, der proportional zur integrier-
+ten Intensität des Valenzbandspektrums bei höheren Energien E > E(i) ist. Die korrigierte
+Intensität I (cid:48)(cid:48)
 
-\[\Delta E=1/2E_{PASS}+\alpha\]
+i ergibt sich daher wie folgt:
 
-This formulae is obtained by a single integration of all amplitude
-data measured within a certain period. Later recalculated intensity
-revitalises all dependencies. 
+$$I_{i,corr}^{''} = I_i - \kappa \int_{E(i)}^{E_{max}} I(E') dE'$$
 
-Here follows a little text with no meaning, only to get to page ..
-next .. and there I need a little paragraph.
+Die Intensität $I_0^{'}$  in Kanal 0 steht für eine Energie unterhalb des Valenzbandes und wurde mit $I^{''}_0 = I^{'}_{i_{max}}$ festgelegt.
 
-Maybe this is my paragraph, I hope I'll like him. Here now a picture
-is to be introduced. Let's see if it figures out.
+\subsection{Glättung der Spektren nach Savitzky-Golay}
+
+Wie jedes andere analoge Signal sind die gemessenen Intensitäten mit einem statistischen Feh-
+ler behaftet, der sich in einem Rauschen des Messsignals äußert. Dieses lässt sich selbstver-
+ständlich durch eine Erhöhung der Statistik verringern. Damit ist aber auch ein Anstieg der
+nötigen Messzeit verbunden; der möglichen Zählrate sind Grenzen gesetzt. In der Praxis muss
+ein Kompromiss zwischen akzeptabler Messzeit und hoher Zählrate gefunden werden.
+
+Die Spektren der Photoemission werden meist mit sehr hoher Auﬂösung aufgenommen, so
+dass die einzelnen Werte von Datenpunkt zu Datenpunkt nur wenig variieren. Diese sind mit
+einem Rauschen überlagert. Für diese Art Daten eignet sich der Glättungsalgorithmus nach
+Savitzky-Golay [24] sehr gut. Hierbei ergibt sich der geglättete Wert I (cid:48)
+i eines Messpunktes aus
+der gewichteten Mittelung über seine Nachbarwerte:
+
+$$I_{i,glatt} = \sum_{n=-m}^{m} C_n I_{i+n}$$
+
+Die Mittelung im Intervall k $\in$ [i - nL, i + nR] soll gerade dem Wert des Least-Square-
+Polynomﬁts durch die Punkte Ik am Punkt Ii entsprechen, die Koefﬁzienten cn werden ent-
+sprechend gewählt. Zur Auswertung der Spektren wurde die Software Origin 7.5 verwendet
+[25]. Sie bietet einen eingebauten Algorithmus zur Datenglättung nach Savitzky-Golay. Er fand
+bei den ausgewerteten Spektren Anwendung.
+
+\section{Trennung von Oberﬂächen und Volumenbandstruktur}
+
+Im Allgemeinen interessiert bei Photoemissionsmessungen die elektronische Struktur des Vo-
+lumens. Bedingt durch die starke Oberﬂächensensitivität dieser Messmethode spielen ener-
+getische Zustände der Oberﬂäche in den gemessenen Spektren eine große Rolle. Die Wellen-
+funktion dieser Zustände fällt auf beiden Seiten der Oberﬂäche exponentiell ab. Im Fall einer
+Entartung mit Volumenzuständen fällt sie im Kristall nur auf einen endlichen Wert ab, man
+spricht von einer Oberﬂächenresonanz.
+
+Der Ursprung dieser abweichenden Zustände liegt in der abweichenden Bindungsstruktur
+der Oberﬂäche. Dazu zählen sogenannte ’dangling bonds’ - freie Valenzen - sowie Brückenbin-
+dungen (’bridge bonds’) und Rückbindungen (’back bonds’). Oberﬂächenabgeleitete Zustände
+besitzen einige Eigenschaften, die sie von Volumenzuständen unterscheiden. In der folgenden
+Liste sind einige aufgeführt [7]. Dabei ermöglicht ein einzelner Punkt allein keine eindeutige
+Zuordnung [11]. Vielmehr sollten immer mehrere dieser Kriterien erfüllt sein:
+
+\begin{itemize}
+  \item Die energetische Lage von Oberﬂächenzuständen ist unabhängig von der Photonenenergie. Bei einer Messung in normaler Emission (auch: $k\perp$-Messung, $k\parallel = 0$) zeigen sie keine Dispersion.
+  \item Ihre Periodizität ist an die Oberﬂächen-Brillouin-Zone gekoppelt. Sie zeigen daher ein anderes Dispersionsverhalten bezüglch $k\parallel$.
+  \item Oberﬂächenzustände liegen teilweise in einer Energielücke des Volumens. Oberﬂächenresonanzen fallen dagegen mit Volumenzuständen zusammen.
+  \item Oberﬂächenzustände reagieren empﬁndlich auf Adsorbate. Sie verschwinden vielfach bei Adsorption von weniger als einer Monolage.
+  \item Volumenzustände können häuﬁg durch den Vergleich mit Volumenbandstrukturrechnungen identiﬁziert werden.
+  \item Wenn ebenso Bandstrukturrechnungen für die Oberﬂäche vorliegen, kann ein Vergleich weitere Hinweise auf Oberﬂächenzustände liefern.
+  \item Teilweise besitzen Oberﬂächenzustände Orbitalcharakter. Durch gezielte Variation des Übergangsmatrixelementes oder der Symmetrieeigenschaften in Abhängigkeit vom Azimutalwinkel kann dieser Charakter untersucht werden.
+\end{itemize}
 
 
-\section{Prozess der Photoemission und Untersuchung der Bandstruktur}
-
-While the photo emission is as easy and then later and here a text.
-I'll try to impact a formulae in this text with Lyx so let's see if
-it works: $2k_{B}T=25meV$ sollte mit Subs funktionieren. Probieren
-wir es gleich noch einmal.
-
-\[E_{k}=\sin(\beta+\pi/4)\]
-
-$\vec{E=1/2\sin a}$ und so geht der Text weiter. ein $\vec{E}=\frac{1}{2}mv^{2}$und
-so geht die english translation further and further. Keep on thinking
-about it. Maybe it helps. See you tomorrow. As for me - I can't go
-on living like that and pretend that everything is ok. Therefore don't
-ask, just read.
-
-As for the bandstructure one obtains various many-body-effects on
-the surface. Usually described as a thin layer, it is not nessesaryly
-a big deal. Watch this formulae:
-\begin{eqnarray*}
-E_{f} & = & E_{gap}+E_{Austrittsarbeit}+k_{b}T^{1/2}
-\end{eqnarray*}
 
 
-Not linear dependant it perfectly shows nothing.
+\chapter{Experimentelles}
 
-Fitting parameters are not avaliable. Suiting 4 Gauss profiles leed
-to an extraordinary dispersion in light intensity:
+Alle Photoemissionsmessungen wurden mit der hochauﬂösenden AR65-Anlage durchgeführt.
+Sie ist transportabel gestaltet, daher konnten Messungen sowohl im Labor mit einer He-Lampe
+als auch bei BESSY an einem Synchrotronmessplatz durchgeführt werden.
+
+\section{Die Photoemissionsanlage AR65}
+
+Die UHV-Anlage AR65 wurde in unserer Arbeitsgruppe bis 1999 aufgebaut [26], um hochauf-
+lösende Messungen am neu gebauten Synchrotron BESSY II zu ermöglichen [27]. Die 750kg
+schwere Anlage wurde kompakt und fahrbar aufgebaut, damit an verschiedenen Beamlines
+oder auch im Labor gemessen werden kann. Sie besteht aus einer Hauptkammer, in der die
+eigentlichen Messungen durchgeführt werden, und einer Einschleuskammer.
+
+In Kapitel 2 wurde die hohe Oberﬂächensensitivität der Photoemission erläutert. Weite-
+re Aspekte HgCdTe betreffend werden in Kapitel 6 erörtert. Um diesen hohen Anforderungen
+gerecht zu werden, ist die Hauptkammer mit einer Vielzahl unterschiedlicher Pumpen verbun-
+den. Diese laufen an der Pumpkammer zusammen, dort ﬁndet auch die Druckmessung statt.
+Die Pumpkammer ist über ein 200mm-Pumprohr von 1 Meter Länge mit der Messkammer ver-
+bunden. Auf diese Weise sollen störende Einﬂüsse der Pumpsysteme und des Druckmesskop-
+fes auf die Photoemissionsmessung minimiert werden. Insbesondere magnetische Streufelder
+der Ionengetterpumpe könnten das Messergebnis beeinﬂussen.
+
+An die Pumpkammer sind eine 500l-Turbomolekularpumpe, eine 500l-Ionengetterpumpe,
+eine 1200l-Titansublimationspumpe sowie eine 1500l-Kryopumpe angeschlossen. Die angege-
+benen Pumpleistungen pro Sekunde beziehen sich mit Ausnahme der TSP (hier H2) auf Stick-
+stoff. Mit ihnen kann am Pumpenkreuz ein Druck von $p = 1.3 · 10^{-10}mbar$ erreicht werden
+(2007), ohne Kryopumpe werden noch $p = 3 · 10^{-10}mbar$ erreicht. Der entsprechende Druck in
+der Hauptkammer liegt um den Faktor 2 höher [26]. Die Druckmessung der IGP unterschreitet
+im ersteren Fall ihren Grenzbereich von $6.4 · 10^{-11}mbar$ und zeigt low pressure... an.
+
+Um störende Magnetfelder (wie auch das Erdmagnetfeld) vom Messort fernzuhalten, ist
+die Messkammer innen mit einer Abschirmung aus µ-Metall versehen. Dadurch können äußere
+Magnetfelder auf 0,5 \% reduziert werden.
+
+Die winkelaufgelöste Untersuchung der emittierten Photonen erfolgt mit dem Photoelektronenanalysator AR65 der Firma Omicron. Er besitzt einen 180◦ Kugelkondensator oder SDA1 mit einem Sollbahnradius von 65 Millimetern und ist damit der Namengeber der gesamten Anlage. Dieser ist auf einem 2-Achsen-Goniometer montiert. Damit können Winkel im Bereich von $10^\circ < \Phi <-90^\circ$ in der Vertikalen und 0◦< $\theta < 350^\circ$ in der Horizontalen angefahren werden.
+
+Allgemein kann die spektrale Auflösung $\Delta E_A$ eines Kugelkondensators mithilfe der folgenden Formel [28] bestimmt werden:
+
+$$\Delta E_A = \frac{E_P \Delta R}{2R_0} + E_P \frac{\Delta \alpha^2}{4} + \Delta E_{det}$$
+
+Sie hängt für eine Passenergie $E_{pass}$ der eintretenden Elektronen unter einem Öffnungswinkel $\alpha$ vom Radius $r_0$ des Kondensators sowie der Breite s des Eingangs- und Ausgangsspaltes
+ab. Für die AR65 sind die Spaltbreiten mit s = 1mm gegeben, die Winkelakzeptanz beträgt
+$\alpha = \pm 1◦$. Für eine standardmäßig verwendete Passenergie von $E_{pass} = 10eV$ ergibt sich damit
+eine Energieauflösung von $\Delta E_A \approx 80meV$.
+
+
 
 \begin{center}
 \begin{tabular}{|c|c|c|c|}
@@ -389,18 +601,9 @@ transmission\tabularnewline
 \end{tabular}
 \end{center}
 
-The slight shift in intensity is connected to the thin bilayer splitting
-in HTSC based on YBCO. Bi2212 dosn't shows this behavior.
+The slight shift in intensity is connected to the thin bilayer splitting in HTSC based on YBCO. Bi2212 dosn't shows this behavior.
 
-Et nostrud delicatissimi mea, zzril aeterno ocurreret ut ius. Ius elitr adipisci gloriatur ad, vero augue graece ei nam. Et qui facilisis gloriatur scribentur, usu viris blandit expetenda eu. Sed ad eligendi legendos posidonium, et nostro intellegam vis. In nominati temporibus scriptorem vel. Ne cum takimata periculis definiebas, et inani zzril consequuntur mei, sit ei feugait hendrerit.
 
-Prompta complectitur ad sit, at eligendi oporteat deserunt eum. At duo puto commodo necessitatibus, mei nobis iisque aliquam ea. Duo cu oblique vivendo corrumpit. Ea dicat ubique alterum nam.
-
-Altera deterruisset eum eu, ne vix commodo partiendo democritum. Mel ut sint vulputate. Aperiri postulant mei cu, ius at atqui graeci salutatus. Id tale hinc sapientem eum, ad eum quod adhuc. Te sit sint accusam.
-
-Prompta complectitur ad sit, at eligendi oporteat deserunt eum. At duo puto commodo necessitatibus, mei nobis iisque aliquam ea. Duo cu oblique vivendo corrumpit. Ea dicat ubique alterum nam.
-
-Altera deterruisset eum eu, ne vix commodo partiendo democritum. Mel ut sint vulputate. Aperiri postulant mei cu, ius at atqui graeci salutatus. Id tale hinc sapientem eum, ad eum quod adhuc. Te sit sint accusam.
 \newpage
 
 \begin{figure}
@@ -415,11 +618,6 @@ Altera deterruisset eum eu, ne vix commodo partiendo democritum. Mel ut sint vul
 Ebenfalls wurde in diese Ebene ein LEED/Auger-System (Kap. 3.4) eingebaut. Dadurch können strukturelle wie chemische Eigenschaften der Proben in situ untersucht werden. Insbesondere kann die Probenorientierung durch LEED überprüft werden. Ist die Probe einmal orientiert, wird sie mit dem Kryostaten in die untere Ebene, die Meßebene, gefahren. In der Meßebene fallen (ein genau einjustiertes Experiment vorausgesetzt) der Fokus der Synchrotronstrahlung aus dem Monochromator und 
 \newpage
 
-Ex quem apeirian deseruisse nam, qui eu odio moderatius, augue sensibus erroribus te eum. Accusam adversarium definitionem an has, puto fabulas ne sed, an mel mazim malorum. Eam ne verear reformidans. Scaevola expetenda ei vel, sensibus mediocrem dignissim id usu, dictas verear suavitate mei ad. Nec ad definiebas disputando. Debitis habemus alienum in mea, menandri posidonium an mel.
-
-Vim quod voluptua cu. Veniam dicunt id mei. Primis perpetua mei eu, tibique concludaturque ad sea. Kasd pertinacia qui eu, ex deserunt neglegentur ius. Perpetua scribentur contentiones no mel, ei mel probatus singulis patrioque, eu modus patrioque definitiones quo.
-
-Omnes congue ad quo, ad dicat nonummy sit. Pri an amet consulatu, scaevola vivendum no usu. Ea usu commune torquatos liberavisse. Ius quot duis signiferumque no.
 
 \section{Oberflächenzustände und Bulkbandstruktur}
 
@@ -441,13 +639,10 @@ All measurements were taken with the SCIENTA SES 100 and the WESPHOA
 I at the laboratry in Adlershof, Newtonstr. 14. Very usefull for interpretration
 of the mesurement data was all GPL-software and so on.
 
-Ex quem apeirian deseruisse nam, qui eu odio moderatius, augue sensibus erroribus te eum. Accusam adversarium definitionem an has, puto fabulas ne sed, an mel mazim malorum. Eam ne verear reformidans. Scaevola expetenda ei vel, sensibus mediocrem dignissim id usu, dictas verear suavitate mei ad. Nec ad definiebas disputando. Debitis habemus alienum in mea, menandri posidonium an mel.
 
 \section{Oberflächenzustände}
 
-Eos suscipit posidonium reprimique ne, nec forensibus comprehensam cu. Nec in sint aeterno sapientem, sea cu nonumy vidisse impedit. Te libris torquatos reprehendunt sea. Ea cum perpetua petentium intellegebat, oratio labore ceteros eu pri. Veniam gubergren contentiones est id.
 
-Ad omnis habeo antiopam eam, partem insolens sit et, eam enim appareat conceptam eu. Vocent inimicus neglegentur quo ad, ad nec etiam interpretaris, ex wisi idque regione nec. Pri ut quas nostrum, velit civibus ne sit. Sea simul feugiat cu, te alii invenire consectetuer nam, vim ad contentiones sonet vituperatoribus.
 
 \chapter{Elektronische Eigenschaften von CdTe, HgTe und Cd$_{1-X}$Hg$_{X}$Te}
 \markright{\upshape Elektronische Eigenschaften von CdTe, HgTe und Cd$_{1-X}$Hg$_{X}$Te}
@@ -466,11 +661,7 @@ Hubbard sub-bands. The correlation competes with the delocalization due
 
 \section{Theoretische Bandstruktur}
 
-Et nostrud delicatissimi mea, zzril aeterno ocurreret ut ius. Ius elitr adipisci gloriatur ad, vero augue graece ei nam. Et qui facilisis gloriatur scribentur, usu viris blandit expetenda eu. Sed ad eligendi legendos posidonium, et nostro intellegam vis. In nominati temporibus scriptorem vel. Ne cum takimata periculis definiebas, et inani zzril consequuntur mei, sit ei feugait hendrerit.
 
-Prompta complectitur ad sit, at eligendi oporteat deserunt eum. At duo puto commodo necessitatibus, mei nobis iisque aliquam ea. Duo cu oblique vivendo corrumpit. Ea dicat ubique alterum nam.
-
-Altera deterruisset eum eu, ne vix commodo partiendo democritum. Mel ut sint vulputate. Aperiri postulant mei cu, ius at atqui graeci salutatus. Id tale hinc sapientem eum, ad eum quod adhuc. Te sit sint accusam.
 
 Therefore we need the GW-approximation! Here it comes: see you ....
 
@@ -650,13 +841,13 @@ string datas()
 \bibitem{tougaard} S. Tougaard. Deconvolution of loss features from electron spectra. {\itshape Surface Science} 139 (1984) pp. 208-218.
 \bibitem{kauert} M. Kauert. Vanadiumoxide. Herstellung, Charakterisierung und elektronische Struktur. {\itshape Diplomarbeit,} AG EES, (2007).
 \bibitem{savitzky} A. Savitzky, Marcel J.E. Golay. Smoothing and Differentiation of Data by Simplified Least Squares Procedures. {\itshape Analytical Chemistry,} 36: 1627-1639 (1964). doi:10.1021/ac60214a047
-\bibitem{origin} Softwarepaket: Origin 7.5 SR5, \href{http://www.OriginLab.com}{http://www.OriginLab.com} (2004) {\itshape } 
+\bibitem{origin} Softwarepaket: Origin 7.5 SR5, \href{http://www.OriginLab.com}{http://www.OriginLab.com} (2004)
 \bibitem{plake} T. Plake. Aufbau und Inbetriebnahme des Photoemissionsexperimentes HIRE-PES: Charakterisierung und erste Untersuchungen an $\mathrm{Bi}_{2} \mathrm{Sr}_{2} \mathrm{CuO}_{6}$-Hochtemperatursupraleitern. {\itshape Diplomarbeit,} AG EES, (1998).
 \bibitem{janowitz} C. Janowitz, R. Müller, T. Plake, Th. Böger, R. Manzke. New high-resolution photoemission station for synchrotron radiation at BESSY. {\itshape Journal of Electron Spectroscopy and Related Phenomena} 105, 43-49 (1999).
-\bibitem{purcell} E. Purcell. {\itshape } Phys. Rev. 54 (1938) 818.
+\bibitem{purcell} E. Purcell. {\itshape Phys. Rev.} 54 (1938) 818.
 \bibitem{mante} G. Mante. {\itshape Doktorarbeit,} Universität Kiel (1992).
 \bibitem{omicron}  {\itshape Instruction Manual VUV Discharge Lamp HIS 13.} Omicron Vakuumphysik GmbH (\href{http://www.omicron.de}{www.omicron.de}).
-\bibitem{pt100} Platin-Widerstandsthermometer Pt100 nach IEC 751 / DIN EN 60751. {\itshape } 
+\bibitem{pt100} Platin-Widerstandsthermometer Pt100 nach IEC 751 / DIN EN 60751.
 \bibitem{ar65view}  {\itshape AR65view.} Java-Software zur Analyse und Manipulation der Messdaten von AR65 und WESPHOA. \href{http://sourceforge.net/projects/ar65view/}{sourceforge.net/projects/ar65view/}.
 \bibitem{martins} M. Martins, G. Kaindl, N. Schwentner. Design of the high-resolution BUS XUV-beamline for BESSY II. {\itshape Journal of Electron Spectroscopy and Related Phenomena} 101-103, 965-969 (1999).
 \bibitem{orlowski2} N. Orlowski, J. Augustin, Z. Golacki, C. Janowitz, R. Manzke. Direct evidence for the inverted band structure of HgTe. {\itshape Phys. Rev. B, Rapid Communications,} 61, R5058-R5061, (2000).
@@ -670,7 +861,7 @@ string datas()
 \bibitem{harman} T. C. Harman. Optically pumped LPE-grown Hg\textsubscript{1-X}Cd\textsubscript{X}Te lasers. {\itshape  J. Electron. Mater.} vol. 8 (1979) p. 191-200.
 \bibitem{koo} B. H. Koo, Y. Ishikawa, J.F. Wang, M. Isshiki. Crowth of Hg\textsubscript{1-x}(Cd\textsubscript{1-y}Zn\textsubscript{y})\textsubscript{x}Te epilayers on (100) Cd\textsubscript{1-y}Zn\textsubscript{y}Te/GaAs substrates by ISOVPE. {\itshape Materials Science and Engineering,} B66, 70-74, (1999).
 \bibitem{wang2} Yue Wang, Quanbao Li, Qinglin Han, Qinghua Ma, Rongbin Ji, Bingwen Song, Wanqi Jie, Yaohe Zhou, Yuko Inatomi. Growth and properties of 40 mm diameter Hg\textsubscript{1-X}Cd\textsubscript{X}Te using the two-stage Pressurized Bridgman method. {\itshape Journal of Crystal Growth} 263 (2004) 54-62.
-\bibitem{nikiforov} Vladimir Nikiforov (\ru{Никифоров Владимир Николаевиш}), MSU, Private communication. {\itshape } 
+\bibitem{nikiforov} Vladimir Nikiforov (\ru{Никифоров Владимир Николаевиш}), MSU, Private communication.
 \bibitem{capper} P. Capper. {\itshape Properties of narrow gap Cadmium-based compounds.} INSPEC, the Institution of Electrical Engineers (1994).
 \bibitem{williams} D. J. Williams, A. W. Vere. Sub-grain boundaries in $\mathrm{Cd}_{\mathrm{X}} \mathrm{Hg}_{1-\mathrm{X}} \mathrm{Te}$ and CdTe. {\itshape J. Cryst. Growth} vol. 83 (1987) p. 341-352.
 \bibitem{spicer2} W. E. Spicer, J. A. Silberman, and I. Lindau. Band gap variation and lattice, surface, and interface ``instabilities'' in Hg\textsubscript{1-X}Cd\textsubscript{X}Te and related compounds. {\itshape J. Vac. Sci. Technol. A} 1(3) pp. 1735-1743 (1983).
